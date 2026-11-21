@@ -52,7 +52,7 @@ El agente permite una demostración local sin credenciales. Para una defensa con
 - `outputs/figures/`: gráficas para el reporte y la exposición.
 - `datos/processed/demand_bikes.sqlite` y los CSV asociados: tablas para consultas y análisis BI.
 - `datos/processed/powerbi_source.xlsx`: libro con las cuatro tablas para importar en Power BI.
-- `reportes/Articulo_DemandaBicicletas.md` y `reportes/Reporte_DemandaBicicletas.pdf`: reporte actualizado con las métricas calculadas.
+- `reportes/Articulo_DemandaBicicletas.md` y `reportes/Equipo2_Reporte.pdf`: reporte actualizado con las métricas calculadas.
 
 ## Consultas SQL y Microsoft Fabric
 
@@ -71,7 +71,7 @@ El orden de SQL antes de DAX es recomendado para verificar las tablas y document
 
 `python scripts/export_powerbi_source.py` es opcional: después de `build_sqlite.py`, genera `datos/processed/powerbi_source.xlsx` para importar las tablas en Power BI Desktop. Para el flujo de Fabric descrito arriba, se usan directamente los cuatro CSV; no hace falta cargar `demand_bikes.sqlite` ni el Excel. El repositorio no incluye un informe `.pbix` terminado.
 
-La presentación del proyecto es [`presentacion/Proyecto_DemandaBicicletas_interactiva.html`](presentacion/Proyecto_DemandaBicicletas_interactiva.html). Es un único archivo autónomo: se abre directamente en el navegador, funciona sin servidor ni conexión a internet e incluye el modelo Random Forest para ejecutar predicciones localmente. Para regenerarla después de actualizar datos o modelo, ejecuta `python scripts/build_interactive_html.py` desde la raíz del proyecto. La diapositiva de Power BI queda pendiente para elaboración manual.
+La presentación del proyecto es [`presentacion/Equipo2_Presentacion.html`](presentacion/Equipo2_Presentacion.html). Es un único archivo autónomo: se abre directamente en el navegador, funciona sin servidor ni conexión a internet e incluye el modelo Random Forest para ejecutar predicciones localmente. Para regenerarla después de actualizar datos o modelo, ejecuta `python scripts/build_interactive_html.py` desde la raíz del proyecto. La diapositiva de Power BI queda pendiente para elaboración manual.
 
 ## Proyecto y rúbrica
 
