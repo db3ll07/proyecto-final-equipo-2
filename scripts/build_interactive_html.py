@@ -186,7 +186,7 @@ def main() -> None:
             .replace("__DIFFCI__", json.dumps(results_data["inference"]["difference_ci95_welch"]))
             .replace("__P__", repr(results_data["inference"]["welch_p_value"])))
 
-    out = ROOT / "presentacion" / "Proyecto_DemandaBicicletas_interactiva.html"
+    out = ROOT / "presentacion" / "Equipo2_Presentacion.html"
     out.write_text(html, encoding="utf-8")
     print(f"Presentación creada: {out}")
     print(f"Tamaño: {out.stat().st_size / 1024 / 1024:.2f} MB; {len(data):,} grupos EDA; {len(forest.named_steps['model'].estimators_)} árboles incluidos.")

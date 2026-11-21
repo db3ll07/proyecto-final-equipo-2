@@ -120,7 +120,7 @@ Se recomienda usar el modelo como una señal para planear revisiones horarias, r
     styles.add(ParagraphStyle(name="Small", parent=styles["BodyText"], fontSize=8, leading=10))
     story = [Paragraph("Pronóstico de demanda de bicicletas por hora", styles["TitleCenter"]),
              Paragraph("Proyecto final · Diplomado Liderazgo en la Era de la IA", styles["Heading3"]),
-             Paragraph("Autoría: Equipo por definir · Fuente: UCI Machine Learning Repository", styles["BodyText"]),
+             Paragraph("Autoría: Equipo 2 - Daniel Bello Romero · Fuente: UCI Machine Learning Repository", styles["BodyText"]),
              Spacer(1, 8), Paragraph("Resumen", styles["Section"]), Paragraph(escape(abstract), styles["BodySpanish"])]
     for title, body in sections:
         story += [Paragraph(escape(title), styles["Section"])]
@@ -168,7 +168,7 @@ Se recomienda usar el modelo como una señal para planear revisiones horarias, r
         canvas.drawRightString(7.82*inch, .36*inch, f"Página {doc.page}")
         canvas.restoreState()
 
-    pdf_path = REPORTS / "Reporte_DemandaBicicletas.pdf"
+    pdf_path = REPORTS / "Equipo2_Reporte.pdf"
     doc = SimpleDocTemplate(str(pdf_path), pagesize=letter, rightMargin=.68*inch, leftMargin=.68*inch,
                             topMargin=.68*inch, bottomMargin=.75*inch, title="Pronóstico de demanda de bicicletas")
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
